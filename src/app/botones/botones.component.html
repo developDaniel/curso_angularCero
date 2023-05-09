@@ -1,0 +1,28 @@
+<!-- <h1>
+    <button [class.disabled]="buton_disabled"  class="btn btn-danger" (click)="text_color = 'text-danger'">color rojo</button>
+    <button [class.disabled]="buton_disabled" class="btn btn-success mx-2" (click)="text_color = 'text-success'">color azul</button>
+    <button [class.disabled]="buton_disabled" class="btn btn-primary" (click)="text_color = 'text-primary'">color verde</button>
+</h1> -->
+
+<!-- <h1>
+    <button [class]="{'disabled' : buton_disabled}"  class="btn btn-danger" (click)="text_color = 'text-danger'">color rojo</button>
+    <button [class]="{'disabled' : buton_disabled}" class="btn btn-success mx-2" (click)="text_color = 'text-success'">color azul</button>
+    <button [class]="{'disabled' : buton_disabled}" class="btn btn-primary" (click)="text_color = 'text-primary'">color verde</button>
+</h1> -->
+
+<h1>
+    <button [disabled] = "buton_disabled"  class="btn btn-danger" (click)="text_color = 'text-danger'">color rojo</button>
+    <button [disabled] = "buton_disabled" class="btn btn-success mx-2" (click)="text_color = 'text-success'">color azul</button>
+    <button [disabled] = "buton_disabled" class="btn btn-primary" (click)="text_color = 'text-primary'">color verde</button>
+</h1>
+
+<p [class]="text_color">hola mundo</p>
+
+<button class="btn btn-secundary" (click)="buton_disabled = !buton_disabled">
+    habilitar/Desabilitar
+</button>
+
+
+
+
+

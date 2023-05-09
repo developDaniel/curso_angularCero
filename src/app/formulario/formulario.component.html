@@ -1,0 +1,16 @@
+
+<input type = "text" placeholder="Ingresa tu correo" class="form-control mt-2"  #name>
+<button class="btn btn-primary mt-2" (click)="mostrar_consola(name.value)">
+    Mostrar correo
+</button>
+
+<div class="alert alert-primary mt-4" *ngIf="openAlert; else mensaje">
+    <p>se ha enviado el mensaje</p>
+    <button class="btn btn-da" (click)="openAlert = false" >x</button>
+</div>
+
+<ng-template #mensaje >
+    <div>
+    mensaje de prueba
+    </div>
+</ng-template>
