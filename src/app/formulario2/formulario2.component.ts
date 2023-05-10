@@ -17,6 +17,8 @@ export class Formulario2Component implements OnInit {
     console.log(this.persona);
   }
 
+  
+
   constructor() { }
 
   ngOnInit(): void {

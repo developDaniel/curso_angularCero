@@ -1,0 +1,32 @@
+<div class="card">
+    <div class="card-body">
+        <form [formGroup]="formUser" (ngSubmit)="procesar()">
+            <div class="mb-2">
+                <label class="form-label">
+                    Ingrese Nombre
+                </label>
+                <input type="text" formControlName = "name" class="form-control" placeholder="Por favor ingrese su nombre">
+                <div class="alert alert-danger" [hidden]="getname.valid || getname.pristine">
+                    el nombre es obligatorio
+                </div>
+            </div>
+            <div class="mb-2">
+                <label class="form-label">
+                    Ingrese Email
+                </label>
+                <input type="text" formControlName = "email" class="form-control" placeholder="Por favor ingrese su Email">
+                <div class="alert alert-danger" [hidden]="getemail.valid || getemail.pristine">
+                    <span *ngIf="getemail.errors?.['required']" >el email es obligatorio</span>
+                    <span *ngIf="getemail.errors?.['email']" >el email de ser validado</span>
+                </div>
+            </div>
+
+            <button class="btn btn-primary" [disabled]="formUser.invalid">Enviar</button>
+        </form>
+    </div>
+</div>
+
+<!-- {{name.value }} <br> -->
+<!-- {{email.errors | json }} -->
+
+{{formUser.get('email')?.value}}

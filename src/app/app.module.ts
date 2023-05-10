@@ -8,7 +8,8 @@ import { BuclesComponent } from './bucles/bucles.component';
 import { SwichComponent } from './swich/swich.component';
 import { Formulario2Component } from './formulario2/formulario2.component';
 
-import { FormsModule } from '@angular/forms'; //se agrega de forma manual para formularios
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormularioReactivoComponent } from './formulario-reactivo/formulario-reactivo.component'; //se agrega de forma manual para formularios
 
 @NgModule({
   declarations: [
@@ -18,11 +19,13 @@ import { FormsModule } from '@angular/forms'; //se agrega de forma manual para f
     FormularioComponent,
     BuclesComponent,
     SwichComponent,
-    Formulario2Component
+    Formulario2Component,
+    FormularioReactivoComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule //se agrega de forma manual para formularios
+    FormsModule, //se agrega de forma manual para formularios
+    ReactiveFormsModule //se agrega formularios reactivos
   ],
   providers: [],
   bootstrap: [AppComponent]
