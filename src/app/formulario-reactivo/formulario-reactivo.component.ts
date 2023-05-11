@@ -8,7 +8,7 @@ import { FormBuilder, FormControl, Validators, FormGroup } from '@angular/forms'
 })
 export class FormularioReactivoComponent implements OnInit {
 
-  constructor() {
+  constructor(private fb: FormBuilder) {
 
     
    }
@@ -24,10 +24,15 @@ export class FormularioReactivoComponent implements OnInit {
     return this.formUser.get('email') as FormControl;
   }
 
-  formUser = new FormGroup({
-    'name' : new FormControl("",Validators.required),
-    'email' : new FormControl("",[Validators.required,Validators.email])
-  });
+  // formUser = new FormGroup({
+  //   'name' : new FormControl("",Validators.required),
+  //   'email' : new FormControl("",[Validators.required,Validators.email])
+  // });
+
+  formUser = this.fb.group({
+    'name' : ['',Validators.required],
+    'email' : ['',[Validators.required,Validators.email]]
+  })
 
   procesar()
   {
