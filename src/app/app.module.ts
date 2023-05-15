@@ -9,7 +9,9 @@ import { SwichComponent } from './swich/swich.component';
 import { Formulario2Component } from './formulario2/formulario2.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { FormularioReactivoComponent } from './formulario-reactivo/formulario-reactivo.component'; //se agrega de forma manual para formularios
+import { FormularioReactivoComponent } from './formulario-reactivo/formulario-reactivo.component';
+import { AddMessagesComponent } from './add-messages/add-messages.component';
+import { ListMessagesComponent } from './list-messages/list-messages.component'; //se agrega de forma manual para formularios
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { FormularioReactivoComponent } from './formulario-reactivo/formulario-re
     BuclesComponent,
     SwichComponent,
     Formulario2Component,
-    FormularioReactivoComponent
+    FormularioReactivoComponent,
+    AddMessagesComponent,
+    ListMessagesComponent
   ],
   imports: [
     BrowserModule,
