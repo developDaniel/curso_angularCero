@@ -10,8 +10,12 @@ import { Formulario2Component } from './formulario2/formulario2.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormularioReactivoComponent } from './formulario-reactivo/formulario-reactivo.component';
+<<<<<<< HEAD
 import { AddMessagesComponent } from './add-messages/add-messages.component';
 import { ListMessagesComponent } from './list-messages/list-messages.component'; //se agrega de forma manual para formularios
+=======
+import { ChildrenComponent } from './children/children.component'; //se agrega de forma manual para formularios
+>>>>>>> 6f8983f6ad7d9d9d322c9ed1437002b133e1811b
 
 @NgModule({
   declarations: [
@@ -23,8 +27,12 @@ import { ListMessagesComponent } from './list-messages/list-messages.component';
     SwichComponent,
     Formulario2Component,
     FormularioReactivoComponent,
+<<<<<<< HEAD
     AddMessagesComponent,
     ListMessagesComponent
+=======
+    ChildrenComponent
+>>>>>>> 6f8983f6ad7d9d9d322c9ed1437002b133e1811b
   ],
   imports: [
     BrowserModule,
